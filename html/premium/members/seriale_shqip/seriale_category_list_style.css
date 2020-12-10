@@ -1,0 +1,586 @@
+/*-----Content Text Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px; 
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 14pt; 
+}
+
+#content #series_list {
+  margin: 15px auto;
+  width: 100%;
+}
+
+#content h1 {
+  margin: 15px 0;
+  padding: 5px ;
+  font-size: 150%;
+  text-align: center;
+}
+
+#content h2 {
+  margin: 5px 0;
+  padding: 5px ;
+  font-size: 120%;
+  text-align: center;
+}
+
+#content #sort_form, #content #simple_search_form, #content #adv_search_form {
+  border-top: 1px dashed #2224A4; 
+  margin: 0 auto; 
+  margin-bottom: 5px; 
+}
+
+#content #sort_form form, #content #simple_search_form form, #content #adv_search_form form {
+  width: 90%; 
+  margin: 0 auto; 
+}
+
+#content #sort_form form select{
+  width: 60%; 
+  margin: 5px auto; 
+  padding: 3px; 
+  font-weight: bold; 
+  font-size: 70%; 
+  color: #2224A4;; 
+  background: white;  
+  padding: 3px; 
+  list-style: none; 
+  border-top: 1px solid white; 
+  cursor:pointer;
+}
+
+#content #sort_form form input[type=submit]{
+  width: 28%; 
+  margin: 5px; 
+  padding: 3px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 90%; 
+  color: white; 
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+#content #simple_search_form input[type=text]{
+  width: 60%;
+  margin: 5px auto;
+  padding: 3px;
+  border: 2px solid #2224A4;
+  font-weight: bold;
+  color: black;
+  background: white;
+} 
+
+#content #simple_search_form input[type=submit]{
+  width: 28%; 
+  margin: 5px ; 
+  padding: 3px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 90%; 
+  color: white; 
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+/*Toggling element for advanced search form */
+
+#content #simple_search_form #avd_search_toggler {
+  display:block;
+  margin: 10px auto; 
+  padding: 5px; 
+  width: 55%; 
+  max-width: 280px;
+  text-align: center; 
+  color: #00001d;
+  font-weight: bold; 
+  font-size: 85%; 
+  background: DDDDDD;  
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+/*Advanced search Form style */
+
+#content #adv_search_form {
+  margin-bottom: 5px; 
+  display: none;  
+}
+
+#content #adv_search_form fieldset{
+  border: 1px solid #2224A4; 
+}
+
+#content #adv_search_form fieldset legend{
+  padding: 5px; 
+  font-weight: bold; 
+  text-align: center; 
+}
+
+#content #adv_search_form fieldset p{
+  font-size: 75%; 
+  padding: 3px 5px; 
+  text-align: center; 
+  font-style: italic;
+}
+
+#content #adv_search_form fieldset ul{
+  list-style: none; 
+}
+
+#content #adv_search_form fieldset ul li{
+  overflow: hidden; 
+  margin: 5px;
+}
+
+#content #adv_search_form fieldset ul li label{
+  display: block; 
+  width: 25%;
+  padding: 3px; 
+  float: left;  
+  font-size: 90%; 
+  font-weight: bold; 
+}
+
+#content #adv_search_form fieldset ul li input[type=text]{
+  width: 65%; 
+  padding: 3px;
+  border: 2px solid #2224A4;
+  font-weight: bold;
+  color: black;
+  background: white;
+}
+
+#content #adv_search_form fieldset ul li input[type=submit]{
+  display: block; 
+  width: 30%; 
+  margin: 5px auto; 
+  padding: 3px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 90%; 
+  color: white;
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+/*Simple Search Form and Advanced Search Form Black Toggleable Class */
+#content #simple_search_form .black, #content #adv_search_form .black{
+  color: black !important; 
+}
+
+
+/*Subcategories Form (and list) */
+#content #nenkategorite {
+  max-width: 360px; 
+  margin: 10px auto;
+  overflow: hidden;
+  border-top: 1px dashed #2224A4;
+  border-bottom: 1px dashed #2224A4;
+}
+
+#content #nenkategorite form{
+  margin: 10px auto 0 auto;
+  width: 90%;
+  overflow; hidden; 
+}
+
+/*------------------Styling the Checkboxes-------------*/
+#content #nenkategorite form ul {
+  list-style: none;
+  display: block;  
+  max-height: 150px; 
+  overflow-y: scroll;   
+}
+
+#content #nenkategorite form ul li {
+  padding: 3px; 
+  margin: 5px; 
+  float: left; 
+  width: 25%; 
+  border: 2px solid #2224A4;   
+  border-collapse: collapse;
+  border-radius: 8px; 
+  background: white; 
+  color: #2224A4;   
+  font-size: 85%;
+  text-align: center; 
+  cursor:pointer;
+}
+
+#content #nenkategorite form ul li span {
+ margin-left: 1px;
+}
+
+#content #nenkategorite form ul li.checked {
+  background: #111111; 
+  color: white; 
+}
+
+#content #nenkategorite form div {
+  clear: both; 
+  overflow: hidden; 
+}
+
+#content #nenkategorite form input[type=submit], #content #nenkategorite form input[type=reset]{
+  margin: 10px 7%;
+  width: 35%;
+  float: left;  
+  display: block;
+  padding: 3px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 90%; 
+  color: white;
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+#content #nenkategorite form a{
+  margin: 10px 7%;
+  width: 33%;
+  float: left;  
+  display: block;
+  padding: 2px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 105%; 
+  color: white;
+  background: #2224A4; 
+  cursor:pointer;
+  text-decoration: none; 
+  text-align: center; 
+}
+
+#content #sort_form form input[type=submit]:hover, #content #simple_search_form input[type=submit]:hover, #content #adv_search_form fieldset ul li input[type=submit]:hover, #content #nenkategorite form input[type=submit]:hover, #content #nenkategorite form input[type=reset]:hover {
+  color: #2224A4; 
+  background: white; 
+  border-color:#2224A4
+}
+
+#content #nenkategorite form a:hover {
+  color: #2224A4; 
+  background: white; 
+  border-color:#2224A4
+}
+
+/*Styling the series_list */
+
+#content #lista_seriale {
+  margin: 0 auto;
+  max-width: 360px; 
+  margin: 1px auto;
+  overflow: hidden;
+  list-style: none;
+  clear: both; 
+}
+
+#content #lista_seriale li{
+  margin: 15px auto;
+  width: 90%;
+  background: url("images/mobile/lista_background.jpg");
+  border: 1px solid #2224A4;
+}
+
+#content #lista_seriale li a{
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  text-decoration: none; 
+  position: relative; 
+}
+
+#content #lista_seriale li a img{
+  margin: 0 8px 0 0;
+  width: 140px;
+  height: 100%; 
+  display: block; 
+  border-right: 1px dashed white; 
+  position: absolute;
+}
+
+#content #lista_seriale li a p{
+  margin: 0 auto;
+  padding: 5px 0 0 145px;
+  display: block;
+  font-size: 80%;
+  overflow: hidden; 
+  text-align: center;
+  color: white;
+}
+
+#content #lista_seriale li a p span{
+  display: block; 
+  padding: 3px;  
+  border-top: 1px dashed white; 
+}
+
+/*-----Hover Styles-----*/
+#content #lista_seriale li:hover{
+  background: #2224A4;
+}
+
+/*Bottom Navigation Styles */
+
+#content #bottom_nav{
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+#content #bottom_nav li{
+  margin: 5px 1.5%;
+  padding: 0;
+  width: 10%;
+  display: block;
+  float: left;
+}
+
+#content #bottom_nav li a{
+  display: block; 
+  width: 100%; 
+  padding: 1% 0; 
+  font-weight: bold;
+  font-size: 85%;
+  text-align: center;
+  text-decoration: none; 
+  color: #2D3594;
+  background: white;
+  border: 2px solid #2D3594;
+  border-radius: 10px;  
+  cursor: pointer;
+}
+
+#content #bottom_nav li a:hover{
+  color: white;
+  background: #2D3594;
+}
+
+#content #bottom_nav li a.current{
+  color: orange;
+  background: #2D3594;
+  border: 2px solid white;
+}
+
+#content #bottom_nav li a.greyed{
+  color: black; 
+  background: #6f739b;
+  border: 2px solid black;
+}
+
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+  #content {
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  /*Subcategories Form (and list) */
+  #content #nenkategorite {
+    max-width: 680px; 
+  }
+
+  /*------------------Styling the Checkboxes-------------*/
+  #content #nenkategorite form ul li {
+    padding: 3px 0; 
+    margin: 5px 1.8%; 
+    width: 20%;  
+  }
+
+  #content #nenkategorite form div{
+    max-width: 400px;
+    margin: 0 auto; 
+  }
+
+  /*Styling the series_list */
+  #content #lista_seriale {
+    max-width: 680px; 
+  }
+
+  #content #lista_seriale li{
+    margin: 15px 0 0  3%;
+    width: 45%;
+    float: left;  
+  }
+
+  #content #lista_seriale li a img{
+    margin: 0px auto;
+    width: 100%;
+    height: auto; 
+    border: none;
+    float: left; 
+    position: initial;
+    border-bottom: 1px dashed white; 
+  }
+
+  #content #lista_seriale li a p{
+    font-size: 90%;
+    padding: 8px; 
+    clear: both; 
+  }
+
+  /*-----Hover Styles-----*/
+  #content #lista_seriale li:hover{
+    background: #2224A4;
+  }
+
+  /*Bottom Navigation Styles */
+
+  #content #bottom_nav{
+    margin: 5px auto;
+    overflow: hidden;
+  }
+
+  #content #bottom_nav li{
+    margin: 15px 1.5%;
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+  #content {
+    max-width: 1000px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  }
+  
+  #content h2 {
+    padding: 10px; 
+  }
+  
+  #content #simple_search_form input[type=text]{
+    padding: 8px;
+  }
+ 
+  #content #sort_form, #content  #simple_search_form {
+    width: 48%; 
+    margin: 0 0 0 1.5%; 
+    float: left;  
+  }
+
+  #content #simple_search_form {
+    border-left: 1px dashed #2224A4; 
+  }
+
+  #content #adv_search_form fieldset ul li {
+    float: left; 
+    width: 48%;
+    margin: 10px 0 5px 1.5%; 
+  }
+
+  #content #adv_search_form fieldset ul li label{
+    width: 22%;
+  }
+
+  #content #adv_search_form fieldset ul li input[type=text]{
+    width: 72%;
+    padding: 8px;  
+  }
+
+ /*Subcategories Form (and list) */
+  #content #nenkategorite {
+    max-width: 1000px; 
+    clear: both; 
+  }
+
+  /*------------------Styling the Checkboxes-------------*/
+  #content #nenkategorite form ul li {
+    padding: 3px 0; 
+    margin: 5px 0.7%; 
+    width: 11%;  
+  }
+
+  #content #nenkategorite form div{
+    max-width: 400px;
+    margin: 0 auto; 
+  }
+
+  /*Styling the series_list */
+
+  #content #lista_seriale {
+    max-width: 1000px; 
+  }
+
+  #content #lista_seriale li{
+    margin: 15px 0 0 2%;
+    width: 30%;
+  }
+
+  /*Bottom Navigation Styles */
+
+  #content #bottom_nav{
+    max-width: 800px; 
+    margin: 15px auto;
+    overflow: hidden;
+    padding-bottom: 15px; 
+  }
+
+  #content #bottom_nav li{
+    margin: 15px 1.8%;
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+  #content {
+    max-width: 1440px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  }
+
+  /*Subcategories Form (and list) */
+  #content #nenkategorite {
+    max-width: 1440px; 
+    clear: both; 
+  }
+
+  /*------------------Styling the Checkboxes-------------*/
+  #content #nenkategorite form ul li {
+    padding: 3px 0; 
+    margin: 5px 0.5%; 
+    width: 9%;  
+  }
+
+  #content #nenkategorite form div{
+    max-width: 400px;
+    margin: 0 auto; 
+  }
+
+
+  #content #lista_seriale {
+    max-width: 1440px; 
+  }
+
+  #content #lista_seriale li{
+    margin: 15px 0 0 2.2%;
+    width: 22%;
+  }
+
+  /*Bottom Navigation Styles */
+
+  #content #bottom_nav{
+    max-width: 1000px; 
+    margin: 15px auto;
+    overflow: hidden;
+    padding-bottom: 25px; 
+  }
+
+  #content #bottom_nav li{
+    margin: 25px 1.8%;
+  }
+}

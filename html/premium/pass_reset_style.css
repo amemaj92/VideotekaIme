@@ -1,0 +1,171 @@
+/*-----The Introduction Section Style-----*/
+/*-----General Style-----*/
+#forms {
+  margin: 5px auto; 
+  width: 100%; 
+  overflow: hidden;
+  background: rgba(255,255,255,0.3); 
+  color: white; 
+  font-size: 15pt; 
+}
+
+#intro_wrapper {
+  margin: 0 auto; 
+  max-width: 360px;
+}
+
+#forms p {
+  width: 95%;
+  margin: 5px auto; 
+  font-size: 95%;
+  text-align: center; 
+  font-style: italic;
+}
+
+#forms h1 {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16pt;
+  font-style: italic;
+  text-align: center;
+}
+
+/*-----Text Styles-----*/
+#forms form {
+  display: block;
+  margin: 2% auto; 
+  width: 100%;
+  overflow: hidden;  
+}
+
+#forms form ul {
+  list-style: none; 
+  width: 90%; 
+  margin: 0 auto; 
+  overflow: hidden;
+}
+
+#forms form ul li{
+  overflow: hidden; 
+}
+
+
+#forms form label { 
+  width: 30%; 
+  display: block; 
+  float: left; 
+}
+
+#forms form input[type=text], #forms form input[type=password]{
+  width: 60%;
+  margin: 0px ;
+  padding: 3px;
+  border: 2px solid #2224A4;
+  font-weight: bold;
+  color: black;
+  background: white;
+  float: right; 
+} 
+
+#forms form input[type=submit], #forms form input[type=button]{
+  clear: both; 
+  width: 48%;
+  display: block;
+  max-width: 200px; 
+  display: block;
+  margin: 10px auto; 
+  padding: 2px; 
+  border: 2px solid white;
+  border-radius: 5px;  
+  font-size: 80%; 
+  color: white; 
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+#forms form input[type=submit]:hover, #forms form input[type=button]:hover{
+  text-decoration: underline; 
+  color: #2224A4;
+  background: white;
+  border-color: #2224A4;
+}
+
+#forms #pass_requirements_info {
+  list-style: inside !important;
+  list-style-type: circle !important;
+  font-size: 85%;
+  margin-left: 20px; 
+  padding: 5px; 
+  
+}
+
+.form_info {
+  text-align: left !important; 
+  font-size: 85%; 
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 481px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 680px;
+  }
+  
+  #forms {
+    font-size: 16pt; 
+    padding: 2% 0; 
+  }
+  
+  #forms h1 {
+  font-size: 25pt;
+  }
+    /*-----Text Styles-----*/
+  #forms form {
+    margin: 2% auto; 
+    max-width: 480px; 
+  }
+
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 801px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1120px;
+  }
+  
+  #forms {
+    font-size: 18pt; 
+  }
+    /*-----Text Styles-----*/
+  #forms h1 {
+  font-size: 26pt;
+  }
+}
+
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 1121px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1440px;
+  }
+}
+
+/***************************************************
+****************************************************
+****************************************************/
+
+.error_alert {
+  color: #bf160a; 
+  width: 95%;
+  margin: 5px auto; 
+  font-size: 80%;
+  text-align: center; 
+  font-style: italic;
+  display: none; 
+}
+

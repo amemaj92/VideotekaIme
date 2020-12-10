@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /seriale_shqip/seriale_category_list.js
+
+Disallow: /seriale_shqip/skeda.js
+
+Disallow: /filma_shqip/filma_category_list.js
+
+Disallow: /uni/find_stream.php
+
+Disallow: /stream/
+
+Disallow: /premium/

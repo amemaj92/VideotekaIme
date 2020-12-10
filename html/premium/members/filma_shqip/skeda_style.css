@@ -1,0 +1,259 @@
+/*-----Content Text Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 360px;
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 14pt;
+  padding-bottom: 15px; 
+}
+
+#content #info {
+  margin: 5px 2.4%;
+}
+
+#content #info h1 {
+  margin: 5px auto; 
+  padding: 10px 0;  
+  width: 100%; 
+  color: #2D3594;
+  text-align: center;
+  font-size: 125%; 
+  border-bottom: 1px dashed blue; 
+  overflow: hidden; 
+}
+
+#content #info h1 span {
+  display: block; 
+  width: 50%; 
+  float: left; 
+  font-size: auto; 
+}
+
+#content #info #basic_info #movie_link{
+  width: 130px; 
+  height: 30px; 
+  margin: 0px auto;  
+  display: block;  
+  float: right; 
+  text-align: center; 
+  text-decoration: none; 
+  text-indent: -9999px; 
+  background: url("images/mobile/shiko_filmin.png") 0 0;
+}
+
+#content #info h2 {
+  margin: 5px auto; 
+  text-align: center; 
+  padding: 5px; 
+  color: balck;
+  text-align: center;
+  font-size: 115%; 
+}
+
+#content #info #basic_info #video_container {
+  margin: 0 auto; 
+  width: 89%;
+  max-width: 960px;
+}
+
+#content #info #basic_info #video_container video{
+  margin: 0 auto; 
+  border: 1px solid black; 
+  background: black; 
+  width: 100%;
+  display: block;
+}
+
+#content #info #basic_info #movie_link:hover{
+  background-position: 0 100%;
+}
+
+#content #fcb_ser {
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 90%;
+  border: 1px dashed blue;
+  overflow: hidden; 
+}
+
+#content #info #banner_1 {
+  margin: 10px auto; 
+  width: 90%;
+  max-width: 800px; 
+  max-height: 200px;
+  overflow: scroll;
+  border: 1px solid black; 
+}
+
+#content #info #skeda_info ul{
+  margin: 5px auto;
+  list-style: none;
+  max-width: 1280px;
+  width: 90%;
+}
+
+#content #info #skeda_info ul li {
+  padding: 3px; 
+  font-weight: bold; 
+}
+
+#content #info #skeda_info ul span {
+  text-decoration: underline;
+  color: #2D3594;
+}
+
+#content #banner_2 {
+  margin: 10px auto;
+  width: 320px;
+}
+
+#content #info #description p {
+  margin: 10px auto; 
+  font-weight: normal;
+  max-width: 1280px;
+  width: 90%;
+}
+
+#content #info #description p span {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2D3594;
+}
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+ #content {
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #info h1 {
+    width: 75%; 
+    min-width: 500px;
+    padding: 15px 0; 
+  }
+
+
+  #content #info h1 span {
+    width: 60%;   
+  }
+
+  #content #info #basic_info #movie_link{
+    width: 180px; 
+    height: 43px; 
+    background: url("images/mobile/shiko_filmin_480.png") 0 0;
+  }
+
+  #content #info #skeda_info ul{
+    margin: 10px auto;
+    overflow: hidden;
+    clear: both; 
+  }
+
+  #content #info #skeda_info ul li {
+    padding: 5px; 
+    width: 47%; 
+    float: left;
+    margin 0 auto;
+  }
+
+  #content #info #description p {
+    margin: 10px auto;
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+  #content {
+    max-width: 1000px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+    overflow: hidden; 
+    padding-bottom: 25px;
+  }
+
+  #content #info {
+    font-size: 120%;
+  }
+
+ #content #info h1 { 
+    font-size: 150%; 
+    min-width: 700px;
+    padding: 20px 0; 
+  }
+
+  #content #info h1 span {
+    width: 75%;   
+  }
+
+  #content #info #basic_info #movie_link {
+    background: url("images/mobile/shiko_filmin_480.png") 0 0;
+  }
+
+  #content #info h2 { 
+    font-size: 130%; 
+    min-width: 700px;
+    padding: 15px; 
+  }
+
+
+  #content #info #skeda_info ul{
+    margin: 10px auto;
+    overflow: hidden;
+    clear: both; 
+  }
+
+  #content #info h1 {
+    padding: 15px; 
+    font-size: 150%;
+  }
+
+  #content #info #basic_info #video_container {
+    margin: 10px auto;
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+   #content {
+    max-width: 1440px; 
+    padding-bottom: 35px; 
+  }
+
+  #content #info {
+    font-size: 130%;
+  }
+  
+ #content #info h1 {  
+    width: 960px;
+    padding: 20px 20px 40px 0px; 
+  }
+
+  #content #info h1 span {
+    width: 70%;   
+  }
+
+  #content #info #basic_info #movie_link {
+    width: 259px;
+    height: 63px;
+    background: url("images/shiko_filmin.png") 0 0;
+  }
+
+  #content #info h2 { 
+    font-size: 135%; 
+   width: 960px;
+    padding: 10px; 
+  }
+
+
+}

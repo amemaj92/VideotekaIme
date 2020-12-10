@@ -1,0 +1,219 @@
+/*-----Content Text Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px; 
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 12pt; 
+}
+
+#content #videotekaime_banner_1, #content #videotekaime_banner_2 {
+  display: none; 
+}
+
+#content #video_wrapper h1 {
+  margin: 15px 0;
+  padding: 5px ;
+  font-size: 135%;
+  text-align: center;
+  color:  #2224A4; 
+}
+
+/*Styling the series_list */
+
+#content #video_wrapper #stream_nav ul{ 
+  margin: 1px auto;
+  overflow: hidden;
+  list-style: none; 
+  max-width: 600px; 
+  border-top: 1px dashed blue; 
+}
+
+#content #video_wrapper #stream_nav ul li{
+  margin: 15px 0 15px 0;
+  width: 35%; 
+  margin-left: 10%; 
+  text-align: center; 
+  float: left; 
+}
+
+#content #video_wrapper #stream_nav ul li a{
+  width: 100%; 
+  height: 100%; 
+  padding: 5px 0; 
+  display: block; 
+  text-decoration: none;
+  font-weight: bold; 
+  font-size: 90%;  
+  position: relative;
+  color: white; 
+  background: #2224A4;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/*-----Hover Styles-----*/
+#content #video_wrapper #stream_nav ul li a:hover{
+  background: white;
+  color: #2224A4;
+  border-color: #2224A4;
+}
+
+#content #video_wrapper #stream_nav ul li a.current_nav{
+  background: #111111;
+  color: white;
+  border: 1px solid white;
+}
+
+#content #video_wrapper #video_div {
+  width: 95%; 
+  max-width: 960px;
+  margin:0 auto; 
+  padding-bottom: 30px; 
+}
+
+#content #video_wrapper #video_container{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* The aspect ratio */
+}
+
+#content #video_container iframe,  #content #video_container video{
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  width:    100%;
+  height:   100%;
+  background: black; 
+}
+
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+  #content {
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 14pt; 
+    min-height: 630px;
+  }
+  
+  #content #content_wrapper {
+    position: relative; 
+  }
+  
+  #content #videotekaime_banner_1 {
+    display: block; 
+    width: 120px; 
+    height: 600px; 
+    position: absolute;  
+    top: 15px;  
+    left: 10px; 
+    border: 1px solid black; 
+  }
+  
+  #content #video_wrapper {
+    position: relative;  
+    top: 15px; 
+    margin-left: 140px; 
+  }
+  
+  #content #video_wrapper h1 {
+    font-size: 155%;
+  }
+
+  #content #video_wrapper #stream_nav ul li{
+    margin: 20px 0 20px 0;
+    width: 30%; 
+    margin-left: 15%; 
+  }
+  
+  #content #video_wrapper #video_div {
+    padding-bottom: 45px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+   #content {
+    max-width: 1120px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 14pt; 
+    min-height: 700px; 
+    padding-bottom: 20px;
+  }
+
+  #content #videotekaime_banner_1 {
+    width: 160px; 
+    height: 600px; 
+    top: 75px;
+  }
+  
+  #content #video_wrapper {
+    top: 20px;
+    margin-left: 180px;
+  }
+  
+  
+  #content #video_wrapper #stream_nav ul li{
+    margin: 25px 0;
+    width: 30%; 
+    margin-left: 15%; 
+  }
+  
+  #content #video_wrapper #stream_nav ul li a{
+    font-size: 100%;
+  }
+
+  #content #video_wrapper #video_div {
+    padding-bottom: 20px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+   #content {
+    max-width: 1440px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+    min-height: 800px;
+    padding-bottom: 30px;
+  }
+  
+  #content #videotekaime_banner_1 {
+    top: 170px; 
+  }
+  
+  #content #video_wrapper {
+    position: relative; 
+  }
+  
+  #content #video_wrapper #video_wrapper_no_ad {
+    margin-right: 180px;
+  }
+
+  #content #videotekaime_banner_2 {
+    position: absolute;  
+    display: block; 
+    width: 160px;
+    height: 600px; 
+    top: 150px; 
+    right: 15px; 
+    border: 1px solid black;
+  }
+  
+  #content #video_wrapper #video_div {
+    padding-bottom: 45px; 
+  }
+}

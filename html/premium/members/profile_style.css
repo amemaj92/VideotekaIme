@@ -1,0 +1,362 @@
+/*-----The Introduction Section Style-----*/
+/*-----General Style-----*/
+#introduction {
+  margin: 5px auto; 
+  width: 100%; 
+  overflow: hidden;
+  background: rgba(255,255,255,0.3); 
+  color: white; 
+  font-size: 15pt; 
+}
+
+#intro_wrapper {
+  margin: 0 auto; 
+  max-width: 360px;
+}
+
+/*-----Text Styles-----*/
+#introduction #profile_info, #introduction #kreditet_abonimet {
+  display: block;
+  margin: 2% auto; 
+  width: 100%;
+  overflow: hidden;  
+}
+
+#introduction #profile_info {
+  padding-bottom: 2%;
+  border-bottom: 1px dashed white;
+}
+
+#introduction #profile_info #logout_button{
+  width: 25%;
+  margin: 5px;
+  padding: 2px ;
+  border: 2px solid #2224A4;
+  border-radius: 5px; 
+  font-weight: bold;
+  color: black;
+  background: white;
+  float: right; 
+  font-size: 80%;
+  text-align: center;    
+}
+
+#introduction #profile_info #logout_button:hover{
+  border-color: white;
+  color: white;
+  background: #2224A4;   
+}
+
+#introduction div h1 {
+  padding: 0 0 0 5%; 
+  width: 95%;
+  font-size: 18pt;
+  font-style: italic;
+}
+
+#introduction #abonimi {
+  margin: 15px 0; 
+  border-top: 1px white dashed; 
+  text-align: center; 
+}
+
+#introduction #abonimi span {
+  color: black;
+}
+
+
+#introduction #abonimi h1{
+  padding: 10px; 
+}
+
+#introduction #profile_info ul, #introduction #kreditet_abonimet ul{
+  margin-left: 20px; 
+  width: 90%;
+  overflow: hidden;
+}
+
+#introduction #profile_info li, #introduction #kreditet_abonimet li{
+  margin: 1% 3%;  
+  font-size: 80%; 
+}
+
+#introduction #profile_info li span, #introduction #kreditet_abonimet li span{   
+  font-size: 100%;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+
+/*-----Content Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  background: url("images/mobile/home_content_background.jpg") repeat-x #E7EAFF; 
+}
+
+/*-----Content Text Section Style Rules-----*/
+#content #text_divs_wrapper{
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+#content #bli_kredite, #content #info {
+  margin: 0 2.5%; 
+  font-size: 13pt;
+}
+
+#content #text_divs_wrapper h2{
+  margin-top: 10px; 
+  padding: 10px 0 0 10px;
+  font-size: 16pt;
+}
+
+#content #text_divs_wrapper p{
+  margin: 5px;
+}
+
+#content #text_divs_wrapper ul {
+  margin-left: 15px;
+  padding: 0px;
+}
+
+#content #bli_kredite form {
+  margin: 10px auto;
+}
+
+#content #bli_kredite form input {
+  padding: 5px; 
+  margin: 5px; 
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 481px) {  
+    #introduction {
+    font-size: 16pt; 
+  }
+
+  #intro_wrapper {
+    margin: 0 auto; 
+    max-width: 680px;
+  }
+
+  /*-----Text Styles-----*/
+  #introduction #profile_info, #introduction #kreditet_abonimet {
+    display: block;
+    margin: 2% auto; 
+    width: 100%;
+    overflow: hidden;  
+  }
+
+  #introduction #profile_info {
+    padding-bottom: 2%;
+    border-bottom: 1px dashed white;
+  }
+
+
+  #introduction div h1 {
+    font-size: 22pt;
+  }
+  
+  #introduction #kreditet_abonimet h1 {
+    padding: 0;
+    text-align: center; 
+  }
+    
+  #introduction #kreditet_abonimet li{
+    margin: 1% 2%; 
+    width: 46%;
+    float: left; 
+  }
+
+  /*-----Content Section Style Rules-----*/
+  #content {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    background: url("images/mobile/home_content_background.jpg") repeat-x #E7EAFF; 
+  }
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    margin: 0 auto;
+    max-width: 680px;
+  }
+
+  #content #bli_kredite, #content #info {
+    margin: 1% 2.5%; 
+    font-size: 15pt;
+  }
+  
+  #content #bli_kredite {
+    float: left; 
+    margin-right: 25px;
+    padding: 0 10px 10px 10px;
+    border: 2px dashed green; 
+  }
+  
+  #content #bli_kredite h2 {
+    margin-top: 0; 
+    font-size: 18pt;
+    color: green;
+  }
+
+  #content #info h2{ 
+    padding: 10px 0 0 10px;
+    font-size: 18pt;
+  }
+
+  #content #bli_kredite form input {
+    padding: 8px; 
+    margin: 8px; 
+  }
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 801px) {  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1120px;
+  }
+  
+  #introduction {
+    font-size: 16pt; 
+  }
+
+  #intro_wrapper {
+    margin: 0 auto; 
+    max-width: 960px;
+  }
+
+  /*-----Text Styles-----*/
+  #introduction #profile_info, #introduction #kreditet_abonimet {
+    margin: 2%; 
+    width: 45%;
+    float: left;
+    padding-bottom: 2%;
+  }
+
+  #introduction #profile_info {
+    border-bottom: none; 
+  }
+  
+   #introduction div h1 {
+    font-size: 22pt;
+  }
+  
+  #introduction #kreditet_abonimet h1 {
+    padding: 0 0 0 20px;
+    text-align: left; 
+  }
+  
+  #introduction #kreditet_abonimet {
+    border-left: 2px dashed white; 
+    padding-left: 1%; 
+  }
+    
+  #introduction #kreditet_abonimet li{
+    margin: 1.5% 2%; 
+    width: 100%; 
+  }
+
+  /*-----Content Section Style Rules-----*/
+  #content {
+    background: url("images/home_content_background.jpg") repeat-x #E7EAFF; 
+  }
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  #content #bli_kredite, #content #info {
+    margin: 1% 2.5%; 
+    font-size: 16pt;
+  }
+  
+  #content #bli_kredite {
+    margin-right: 45px; 
+    padding-right: 25px;
+  }
+  
+  #content #bli_kredite h2 {
+    font-size: 20pt;
+  }
+
+  #content #info h2{ 
+    font-size: 20pt;
+  }
+
+  #content #bli_kredite form input {
+    padding: 10px; 
+    margin: 10px; 
+  }
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 1121px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1440px;
+  }
+  
+  #introduction {
+    font-size: 18pt; 
+  }
+  
+  #introduction div h1 {
+    width: 95%; 
+    font-size: 22pt;
+    padding-left: 5%; 
+  }
+  
+  #introduction #kreditet_abonimet h1 {
+    text-align: center; 
+  }
+    
+  #introduction #kreditet_abonimet li{
+    margin-left: 20px; 
+  }
+  #introduction #kreditet_abonimet li{
+    margin: 1% 2.5%; 
+    width: 45%;
+    float: left; 
+  }
+  
+
+  /*-----Content Section Style Rules-----*/
+  #content {
+    background: url("images/home_content_background.jpg") repeat-x #E7EAFF; 
+  }
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  #content #bli_kredite, #content #info {
+    font-size: 18pt;
+  }
+  
+  #content #bli_kredite {
+    margin-right: 55px; 
+    padding-right: 35px;
+  }
+  
+  #content #bli_kredite h2 {
+    font-size: 22pt;
+  }
+
+  #content #info h2{ 
+    font-size: 22pt;
+  }
+
+  #content #bli_kredite form input {
+    padding: 12px; 
+    margin: 12px; 
+  }
+}

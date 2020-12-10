@@ -1,0 +1,313 @@
+/*-----The Introduction Section Style-----*/
+/*-----General Style-----*/
+#forms {
+  margin: 5px auto; 
+  width: 100%; 
+  overflow: hidden;
+  background: rgba(255,255,255,0.3); 
+  color: white; 
+  font-size: 15pt; 
+}
+
+#intro_wrapper {
+  margin: 0 auto; 
+  max-width: 360px;
+}
+
+/*-----Text Styles-----*/
+#forms #login, #forms #signup {
+  display: block;
+  margin: 2% auto; 
+  width: 100%;
+  overflow: hidden;  
+}
+
+#forms #login {
+  padding-bottom: 2%;
+  border-bottom: 1px dashed white;
+}
+
+#forms #login div {
+  overflow: hidden; 
+}
+
+#forms div h1 {
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  font-size: 18pt;
+  font-style: italic;
+  text-align: center;
+}
+
+#forms div p {
+  width: 95%;
+  margin: 0 auto; 
+  font-size: 80%;
+  text-align: center; 
+  font-style: italic;
+}
+
+
+#forms #login ul, #forms #signup ul{
+  list-style: none; 
+  width: 95%; 
+  overflow: hidden;
+}
+
+#forms #login li, #forms #signup li {
+  margin: 0 3%; 
+  padding: 1px;
+  font-size: 90%;
+  overflow: hidden; 
+}
+
+#forms #login li label, #forms #signup li label {
+  width: 30%; 
+  margin: 5px; 
+  padding: 3px; 
+  display: block; 
+  float: left; 
+}
+
+#forms #login li input[type=text], #forms #login li input[type=password], #forms #signup li input[type=text], #forms #signup li input[type=password]{
+  width: 60%;
+  margin: 5px 0 5px 0;
+  padding: 3px;
+  border: 2px solid #2224A4;
+  font-weight: bold;
+  color: black;
+  background: white;
+  float: right; 
+} 
+
+#forms #login input[type=button], #forms #signup input[type=button]{
+  width: 48%; 
+  display: block;
+  margin: 5px auto; 
+  padding: 2px; 
+  border: 2px solid white;
+  border-radius: 5px; 
+  font-size: 80%; 
+  color: white; 
+  background: #2224A4; 
+  cursor:pointer;
+}
+
+#forms #login input[type=button]:hover, #forms #signup input[type=button]:hover{
+  text-decoration: underline; 
+  color: #2224A4;
+  background: white;
+  border-color: #2224A4;
+}
+
+#forms #pass_requirements_info {
+  list-style: inside !important;
+  list-style-type: circle !important;
+  font-size: 85%;
+  margin-left: 20px; 
+  padding: 5px; 
+  
+}
+
+#forms #login a {
+  font-weight: bold; 
+}
+
+.form_info {
+  text-align: left !important; 
+  font-size: 85%; 
+}
+
+
+/*-----Content Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  background: url("images/mobile/home_content_background.jpg") repeat-x #E7EAFF; 
+}
+
+/*-----Content Text Section Style Rules-----*/
+#content #text_divs_wrapper{
+  margin: 0 auto;
+  max-width: 360px;
+  margin: 0 2.5%; 
+  font-size: 14pt;
+}
+
+#content #text_divs_wrapper h2{
+  margin-top: 10px; 
+  padding: 10px 0 0 15px;
+  font-size: 18pt;
+  clear: both;
+}
+
+#content #text_divs_wrapper p{
+  margin: 5px;
+  text-indent: 5%; 
+}
+
+#content #video_div {
+  width: 60%; 
+  margin: 20px 5% 10px 0;
+  float: left; 
+  max-width: 848px; 
+  min-width: 320px;
+}
+
+#content #video_div video{
+  margin: 15px 0; 
+  width: 100%;
+}
+
+#content #text_info {
+  width: 35%;
+  min-width: 320px; 
+  float: left; 
+}
+
+
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 481px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 680px;
+  }
+  
+  #forms {
+    font-size: 15pt; 
+  }
+  
+    /*-----Text Styles-----*/
+  #forms #login, #forms #signup {
+    margin: 2% auto; 
+    max-width: 480px; 
+  }
+
+  #forms {
+    padding-bottom: 2%;
+  }
+
+  /*-----Content Section Style Rules-----*/
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    max-width: 680px;
+  }
+
+  #content #left_col_text_div, #content #right_col_text_div {
+    margin: 0 1.9%;
+    width: 45%;
+    float: left; 
+  }
+
+  #content #left_col_text_div {
+    margin-right: 0; 
+    padding-right: 1.9%;
+    border-right: 1px dashed black; 
+  }
+}
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 801px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1120px;
+  }
+  
+    /*-----Text Styles-----*/
+  #forms #login, #forms #signup {
+    margin: 1% 2%; 
+    width: 45%;
+    float: left;
+    max-width: none; 
+  }
+  
+  #forms div h1 {
+  font-size: 105%;
+  }
+
+  #forms #signup {
+    padding-left: 1%;
+    border-left: 2px dashed white;
+  }
+  
+  #forms #login {
+    border-bottom: none;
+  }
+  
+  #forms #login li input[type=text], #forms #login li input[type=password], #forms #signup li input[type=text], #forms #signup li input[type=password]{
+   margin: 8px 0 8px 0;
+   padding: 8px;
+  } 
+
+  /*-----Content Section Style Rules-----*/
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    max-width: 1120px;
+    font-size: 16pt; 
+  }
+
+  #content #text_divs_wrapper h2{
+  padding: 15px 0 0 20px;
+  font-size: 120%;
+  }
+}
+
+
+/*----------@media styles for screens >=960px----------*/
+@media screen and (min-width: 1121px) {
+  
+  /*Intorduction Styles and Rules*/
+  #intro_wrapper{
+    max-width: 1440px;
+  }
+  
+    /*-----Text Styles-----*/
+  #forms #login, #forms #signup {
+    margin: 1% 2%; 
+    width: 45%;
+    font-size: 160%;
+  }
+
+  #forms div h1 {
+  font-size: 115%;
+  }
+
+  #forms div h2 {
+    padding: 5px;
+    font-size: 100%;
+  }
+
+  /*-----Content Text Section Style Rules-----*/
+  #content #text_divs_wrapper{
+    max-width: 1440px;
+    font-size: 16pt; 
+  }
+
+  #content #text_divs_wrapper h2{
+  padding: 15px 0 0 15px;
+  font-size: 135%;
+  }
+  
+  #content #text_divs_wrapper p{
+  font-size: 120%; 
+  }
+}
+
+/***************************************************
+****************************************************
+****************************************************/
+
+.error_alert {
+  color: #bf160a;
+  font-weight: bold; 
+  font-size: 80%; 
+  font-style: italic; 
+  display: none; 
+}
+

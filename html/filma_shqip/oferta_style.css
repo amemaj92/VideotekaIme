@@ -1,0 +1,152 @@
+#black_background {
+    width: 100%; 
+    height: 100%; 
+    z-index: 10; 
+    position: fixed; 
+    top: 0; 
+    left: 0;  
+    background-color: #333333;
+    background-color: rgba(33,33,33,0.85);
+}
+
+#offer_plakat {
+    width: 300px; 
+    height: 165px; 
+    margin: 150px auto;
+}
+
+#butonat_oferta {
+    position: absolute; 
+    margin-top: -85px; 
+    margin-left: 180px;  
+    width: 90px; 
+    height: 168px; 
+    list-style-type:none;
+}
+
+#butonat_oferta li {
+    display: block; 
+    width: 100%; 
+    height: 23px; 
+    background: none; 
+    margin-top: 10px;
+}
+
+#butonat_oferta li a {
+   display: block; 
+   width: 100%; 
+   height: 23px; 
+   z-index: 20;
+}
+
+a.button_yes {
+    background: url("/uni/images/Oferta/po_300.png");
+}
+
+a.button_no {
+    background: url("/uni/images/Oferta/jo_300.png");
+}
+
+@media screen and (min-width:481px) {
+    #offer_plakat {
+        width: 400px; 
+        height: 220px; 
+        margin: 100px auto;
+    }
+    
+    #butonat_oferta {
+        margin-top: -110px; 
+        margin-left: 245px;  
+        width: 120px; 
+        height: 135px; 
+    }
+    
+    #butonat_oferta li {
+        height: 31px; 
+        margin-top: 10px;
+    }
+    
+    #butonat_oferta li a {
+       height: 31px; 
+    }
+    
+    a.button_yes {
+        background: url("/uni/images/Oferta/po_400.png") no-repeat;
+    }
+    
+    a.button_no {
+        background: url("/uni/images/Oferta/jo_400.png") no-repeat;
+    }
+}
+
+@media screen and (min-width:801px) {
+    #offer_plakat {
+        width: 650px; 
+        height: 360px; 
+        margin: 150px auto;
+    }
+    
+    #butonat_oferta {
+        margin-top: -180px; 
+        margin-left: 400px;  
+        width: 190px; 
+        height: 165px; 
+    }
+    
+    #butonat_oferta li {
+        height: 51px; 
+        margin-top: 10px;
+    }
+    
+    #butonat_oferta li a {
+       height: 51px; 
+    }
+    
+    a.button_yes {
+        background: url("/uni/images/Oferta/po_650.png") no-repeat;
+    }
+    
+    a.button_no {
+        background: url("/uni/images/Oferta/jo_650.png") no-repeat;
+    }
+}
+
+@media screen and (min-width:1121px) {
+    #offer_plakat {
+        width: 900px; 
+        height: 500px; 
+        margin: 150px auto;
+    }
+    
+    #butonat_oferta {
+        position: absolute; 
+        margin-top: -250px; 
+        margin-left: 550px;  
+        width: 265px; 
+        height: 200px; 
+        list-style-type:none;
+    }
+    
+    #butonat_oferta li {
+        display: block; 
+        width: 100%; 
+        height: 70px; 
+        background: none; 
+        margin-top: 10px;
+    }
+    
+    #butonat_oferta li a {
+       display: block; 
+       width: 100%; 
+       height: 70px; 
+       z-index: 20;
+    }
+    
+    a.button_yes {
+        background: url("/uni/images/Oferta/po.png");
+    }
+    
+    a.button_no {
+        background: url("/uni/images/Oferta/jo.png");
+    }
+}

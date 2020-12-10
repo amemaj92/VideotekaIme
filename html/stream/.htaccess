@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c> 
+    RewriteRule ^(stream1.php+)?$ stream_1.php [L] [NC]
+    RewriteRule ^(stream2.php+)?$ stream_2.php [L] [NC]
+    RewriteRule ^(stream3.php+)?$ stream_3.php [L] [NC]
+</IfModule>

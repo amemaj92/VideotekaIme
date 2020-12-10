@@ -1,0 +1,54 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c> 
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^videotekaime.com [NC,OR]
+    RewriteCond %{HTTP_HOST} ^www\.videotekaime\.com [NC]
+    RewriteRule ^(.*)$ http://videotekaime.net/$1 [R=301,NC]
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^www\.videotekaime\.net [NC]
+    RewriteRule ^(.*)$ http://videotekaime.net/$1 [R=301]
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+    RewriteRule ^seriale_shqip/skeda/([a-zA-Z_()0-9]+)?$ seriale_shqip/skeda.php?seriali=$1 [L] [NC]
+    RewriteRule ^seriale_shqip/skeda1/([a-zA-Z_()0-9]+)?$ seriale_shqip/skeda1.php?seriali=$1 [L] [NC]
+    RewriteRule ^seriale_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)?$ seriale_shqip/seriale_category_list.php?ct=$1&Sort=$2&Wind=$3 [L] [NC]
+    RewriteRule ^seriale_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)?$ seriale_shqip/seriale_category_list.php?ct=$1&Sort=$2 [L] [NC]
+    RewriteRule ^seriale_shqip/([a-zA-Z_]+)/([0-9]+)?$ seriale_shqip/seriale_category_list.php?ct=$1&Wind=$2 [L] [NC]
+    RewriteRule ^seriale_shqip/([a-zA-Z_]+)?$ seriale_shqip/seriale_category_list.php?ct=$1 [L] [NC]
+    
+    #RewriteRule ^NEW/seriale_shqip/skeda/([a-zA-Z_()0-9]+)?$ NEW/seriale_shqip/skeda.php?seriali=$1 [L] [NC]
+
+
+    RewriteRule ^filma_shqip/skeda/([a-zA-Z_]+)/([a-zA-Z_()0-9]+)?$ filma_shqip/skeda.php?ct=$1&mov=$2 [L] [NC]
+    RewriteRule ^filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)?$ filma_shqip/filma_category_list.php?ct=$1&Sort=$2&Wind=$3 [L] [NC]
+    RewriteRule ^filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)?$ filma_shqip/filma_category_list.php?ct=$1&Sort=$2 [L] [NC]
+    RewriteRule ^filma_shqip/([a-zA-Z_]+)/([0-9]+)?$ filma_shqip/filma_category_list.php?ct=$1&Wind=$2 [L] [NC]
+    RewriteRule ^filma_shqip/([a-zA-Z_]+)?$ filma_shqip/filma_category_list.php?ct=$1 [L] [NC]
+
+    #RewriteRule ^NEW/filma_shqip/skeda/([a-zA-Z_]+)/([a-zA-Z_()0-9]+)?$ NEW/filma_shqip/skeda.php?ct=$1&mov=$2 [L] [NC]
+    #RewriteRule ^NEW/filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)?$ NEW/filma_shqip/filma_category_list.php?ct=$1&Sort=$2&Wind=$3 [L] [NC]
+    #RewriteRule ^NEW/filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)?$ NEW/filma_shqip/filma_category_list.php?ct=$1&Sort=$2 [L] [NC]
+    #RewriteRule ^NEW/filma_shqip/([a-zA-Z_]+)/([0-9]+)?$ NEW/filma_shqip/filma_category_list.php?ct=$1&Wind=$2 [L] [NC]
+    #RewriteRule ^NEW/filma_shqip/([a-zA-Z_]+)?$ NEW/filma_shqip/filma_category_list.php?ct=$1 [L] [NC]
+
+</IfModule>
+
+
+<IfModule mod_rewrite.c> 
+    RewriteRule ^premium/members/seriale_shqip/skeda/([a-zA-Z_()0-9]+)?$ premium/members/seriale_shqip/skeda.php?seriali=$1 [L] [NC]
+    RewriteRule ^premium/members/seriale_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)?$ premium/members/seriale_shqip/seriale_category_list.php?ct=$1&Sort=$2&Wind=$3 [L] [NC]
+    RewriteRule ^premium/members/seriale_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)?$ premium/members/seriale_shqip/seriale_category_list.php?ct=$1&Sort=$2 [L] [NC]
+    RewriteRule ^premium/members/seriale_shqip/([a-zA-Z_]+)/([0-9]+)?$ premium/members/seriale_shqip/seriale_category_list.php?ct=$1&Wind=$2 [L] [NC]
+    RewriteRule ^premium/members/seriale_shqip/([a-zA-Z_]+)?$ premium/members/seriale_shqip/seriale_category_list.php?ct=$1 [L] [NC]
+    
+    RewriteRule ^premium/members/filma_shqip/skeda/([a-zA-Z_]+)/([a-zA-Z_()0-9]+)?$ premium/members/filma_shqip/skeda.php?ct=$1&mov=$2 [L] [NC]
+    RewriteRule ^premium/members/filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)?$ premium/members/filma_shqip/filma_category_list.php?ct=$1&Sort=$2&Wind=$3 [L] [NC]
+    RewriteRule ^premium/members/filma_shqip/([a-zA-Z_]+)/([a-zA-Z_]+)?$ premium/members/filma_shqip/filma_category_list.php?ct=$1&Sort=$2 [L] [NC]
+    RewriteRule ^premium/members/filma_shqip/([a-zA-Z_]+)/([0-9]+)?$ premium/members/filma_shqip/filma_category_list.php?ct=$1&Wind=$2 [L] [NC]
+    RewriteRule ^premium/members/filma_shqip/([a-zA-Z_]+)?$ premium/members/filma_shqip/filma_category_list.php?ct=$1 [L] [NC]
+</IfModule>

@@ -1,0 +1,153 @@
+<?php
+    /*----PHP Scripts And Variables----*/
+    	//error_reporting(E_ALL);
+    	//ini_set('display_errors', 1);
+    //----Scripts
+    include_once("../uni/db_connect.php");
+    //Declaring Varibales
+    $OS_Platform=GetOS();
+    $IsMobile=IsMobile();
+    $Page_Id=1;
+    session_start();
+?>
+
+<!DOCTYPE HTML>
+
+<html lang="sq">
+    <head>
+        <meta charset="utf-8"/>
+    	<!-- +++ Title and meta tags section +++ -->
+        <title>Stream - Videotekaime.net</title>
+	<meta name="author" content="Videotekaime.net">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php
+		echo '
+		<!-- +++ Basic small screen style up to 960px +++ -->
+		<link rel="stylesheet" type="text/css" href="/uni/uni_style.css">
+		<link rel="stylesheet" type="text/css" href="/stream/stream_style_new.css">
+
+		<!-- +++ Own Scripts +++ -->
+		<script type="text/javascript" src="/uni/Core.js"></script>
+		<script type="text/javascript" src="/uni/UniLib.js"></script>
+		<script> var SubCategory="";</script>
+		';
+	?>
+    </head>
+
+    <body>
+        <!-- +++ Universal Header and Nav  ++ Serving SubCategory as Input to Scripts+++ -->
+        <?php HeaderAndNavEcho("",""); ?>
+
+	<div id="content">
+	    <div id="content_wrapper">
+
+    	    <div id="videotekaime_banner_1"></div>
+
+    	    <div id="video_wrapper">
+    	        <div id="video_wrapper_no_ad">
+        	    <?php
+        	        if(isset($_SESSION["videoteka_Token"]))
+        	        {
+        		        $Token=$_SESSION["videoteka_Token"];
+        		      	//Query per te nxjerre te gjitha informacionet e duhura.
+        		      	$query="SELECT * FROM `Tokens` WHERE `Token`='$Token'";
+        		        $row=mysqli_fetch_assoc(mysqli_query($VID_STATS, $query));
+        		        //Film
+        		        if($row["SoF"]=="F")
+        		        {
+        		        	$inner_query="SELECT * FROM `$row[Kategoria]` WHERE `Indeksi`='$row[Indeksi]'";
+        		        	$inner_row=mysqli_fetch_assoc(mysqli_query($VID_MOVIES, $inner_query));
+        		        	//Checking if Stream_1 Exists and getting streamlink accordingly
+        		        	$result = mysqli_query($VID_MOVIES,"SHOW COLUMNS FROM `$row[Kategoria]` LIKE 'Stream_1'");
+                            $Stream_1_exists = (mysqli_num_rows($result))?TRUE:FALSE;
+                            $Streamlink=$inner_row["Stream_2"];
+        		        	$Header=StringParser($row["Indeksi"], true);
+        		        }
+        		        //Serial
+        		        else if($row["SoF"]=="S")
+        		        {
+        		        	if($row["Episodi"]==0) exit("Episodi 0 nuk ekziston.");
+        		        	$inner_query="SELECT * FROM `$row[Indeksi]` WHERE `Episodi`='$row[Episodi]'";
+        		        	$Header=StringParser($row["Indeksi"]." - Episodi ".$row["Episodi"], true);
+        		        	//Ndrysho gjerat nese Seriali eshte me pjese.
+        		        	if($row["Pjesa"]!=0 AND $row["Pjesa"]!=NULL)
+        		        	{$inner_query=$inner_query." AND `Pjesa`='$row[Pjesa]'"; $Header=$Header." $row[Pjesa]";}
+        		        	//Checking if Stream_1 Exists and getting streamlink accordingly
+        		        	$inner_row=mysqli_fetch_assoc(mysqli_query($VID_SERIES, $inner_query));
+        		            $result = mysqli_query($VID_SERIES,"SHOW COLUMNS FROM `$row[Indeksi]` LIKE 'Stream_1'");
+                            $Stream_1_exists = (mysqli_num_rows($result))?TRUE:FALSE;
+                            $Streamlink=$inner_row["Stream_2"];
+
+        		        }
+        		        //Gabim ne SoF
+        		        else exit("Gabim ne vleren e SoF");
+
+				echo '<div id="notif_block" style="width: 90%; margin: 15px auto; text-align: center; font-size: 100%;">';
+				echo '<p>Nese deshiron ta shkarkosh videon, kliko ketuhref="/uni/find_alt_stream.php">Stream Alternativ</a>.';
+				echo '</div>';
+
+        		        //Pjesa per futjen e videos (iframe)
+        		        echo '<div id="video_div">
+        		        <h1>'.$Header.'</h1>';
+
+        		        /**---------------------------------------*/
+
+        		        echo ' <div id="video_container">
+        		        <iframe id="video_stream" scrolling="no"  src="'.$Streamlink.'" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></div>
+        		        </div>';
+
+        		}
+        	        else exit("Gabim ne procedure. Shiko Tutorialin ne faqen kreyesore per te mesuar proceduren e duhur."); //Mungon Tokeni
+        	    ?>
+    	        </div>
+            <div id="videotekaime_banner_2" style="display: none; !important"></div>
+        </div>
+    </div>
+
+	<?php //Propelerads and Revenue Script ?>
+        <script type="text/javascript" src="//deloplen.com/apu.php?zoneid=1671127" async></script>
+	<script data-cfasync='false' type='text/javascript' src='//p92948.clksite.com/adServe/banners?tid=92948_423119_6&tagid=2'></script>
+
+    <script type="text/javascript">
+    //Banner_1
+        //Script for flexible changes depending on the screen width
+        var bn_1 = document.createElement("script");
+        var bn_1_container=document.getElementById("videotekaime_banner_1");
+
+        bn_1.type = "text/javascript";
+
+        if (bn_1_container.offsetWidth < 155)
+        {
+           bn_1.src = "//p92948.clksite.com/adServe/banners?tid=92948_423119_10";
+        }
+        else
+        {
+            bn_1.src="//p92948.clksite.com/adServe/banners?tid=92948_423119_9";
+        }
+        bn_1_container.appendChild(bn_1);
+
+    //Banner_2
+        //Script for flexible changes depending on the screen width
+        var bn_2_container=document.getElementById("videotekaime_banner_2");
+
+        if (bn_2_container.offsetWidth > 155)
+        {
+           bn_2_container.innerHTML = '';
+        }
+        else
+        {
+            bn_2_container.innerHTML="";
+        }
+
+    </script>
+
+    <?php
+	//Echoing variables to be used for stats.
+	echo "<script>var videoteka_tokeni='$Token'; var videoteka_Streami=$Page_Id;";
+	if($IsMobile) echo "var videoteka_DoMi='M';";
+	else echo "var videoteka_DoMi='D';";
+	echo "</script>";
+	echo '<script type="text/javascript" src="/stream/stream.js"></script>';?>
+
+    </body>
+</html>

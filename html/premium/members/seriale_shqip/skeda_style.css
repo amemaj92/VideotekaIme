@@ -1,0 +1,555 @@
+/*-----Content Text Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 360px;
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 14pt;
+  padding-bottom: 10px; 
+}
+
+#content #info {
+  margin: 5px 2.4%;
+}
+
+#content #info h1 {
+  padding: 5px; 
+  color: #2D3594;
+  text-align: center;
+  font-size: 135%; 
+}
+
+#content #info #basic_info img {
+  margin: 10px auto;
+  width: 90%;
+  display: block;
+}
+
+
+#content #info #banner_1 {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 800px;
+  max-height: 200px;
+  overflow: scroll;
+  border: 1px solid black; 
+}
+
+#content #fcb_ser {
+  margin: 0 auto;
+  width: 90%;
+  padding: 8px;
+  font-size: 90%;
+  border: 1px dashed blue;
+  overflow: hidden; 
+}
+
+#content #info #basic_info ul{
+  margin: 5px auto;
+  width: 90%; 
+  list-style: none;
+}
+
+#content #info #basic_info ul li {
+  padding: 3px; 
+  font-weight: bold; 
+}
+
+#content #info #basic_info ul span {
+  text-decoration: underline;
+  color: #2D3594;
+}
+
+#content #info .untoggled{
+  display: none; 
+}
+
+#content #info  .toggled{
+  display: block; 
+}
+
+#content #info #more_info p {
+  margin: 10px auto;
+  width: 90%; 
+  font-weight: bold; 
+}
+
+#content #info #more_info p:last-of-type {
+  font-weight: normal; 
+}
+
+#content #info #more_info p span {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2D3594;
+}
+
+#content #info #info_toggle {
+  margin: 10px auto; 
+  max-width: 200px;
+  display: block; 
+  text-align: center; 
+  font-weight: bold; 
+  padding: 5px 0; 
+  color: white; 
+  background: #2D3594;
+  border: 1px solid white; 
+  border-radius: 10px; 
+}
+
+#content  #info #info_toggle:hover {
+  color: #2D3594;
+  background: white;
+  border: 1px solid #2D3594; 
+}
+
+/*--Styling the Episodes division*/
+
+#content #episodet {
+  border-top: 1px dashed #2D3594; 
+  padding-top: 5px; 
+  padding-bottom: 50px;
+}
+
+#content #episodet h2 {
+  padding: 5px; 
+  color: #2D3594;
+  text-align: center;
+  font-size: 135%; 
+}
+
+/*-----Styling the search Form----*/
+#content #episodet form {
+  margin: 10px auto;
+  max-width: 250px;
+}
+
+#content #episodet form label {
+  font-weight: bold;
+  font-style: italic; 
+  display: block; 
+  padding: 5px 0; 
+  text-align: center; 
+}
+
+#content #episodet form input {
+  margin: 5px 1.5%; 
+  width: 25%;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #2D3594;
+  border-radius: 2px; 
+}
+
+#content #episodet form a {
+  margin: 5px 1.5%; 
+  width: 25%;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #2D3594;
+  border-radius: 2px; 
+  color: white; 
+  background: #2D3594;
+}
+
+
+#content #episodet form input[type=submit], #content #episodet form input[type=reset],{
+ color: white; 
+ background: #2D3594;
+}
+
+#content #episodet form input[type=submit]:hover, #content #episodet form input[type=reset]:hover {
+  color: #2D3594;
+  background: white;
+  border: 1px solid #2D3594; 
+}
+
+
+#content #episodet #banner_2 {
+  margin: 10px auto;
+  width: 320px;
+}
+
+/*------Styling the list of episodes to click---*/
+#content #episodet #lista_episodeve {
+  margin: 15px auto;
+  width: 90%;
+  list-style: none;
+  border: 2px solid #2D3594; 
+  border-left: none;
+  border-bottom: none;
+}
+
+#content #episodet #lista_episodeve li {
+  border-bottom: 2px solid #2D3594; 
+}
+#content #episodet #lista_episodeve li:nth-of-type(2n) {
+  background: white;
+}
+
+#content #episodet #lista_episodeve li:nth-of-type(2n+1) {
+  background: #E7E0FF;
+}
+
+#content #episodet #lista_episodeve li a {
+  width: 90%;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2D3594;
+}
+
+#content #episodet #lista_episodeve li a span {
+  margin: 0px;
+  margin-left: 10px; 
+  width: 100px;
+  height: 40px;
+  display: block;
+  float: right;
+  background: url("images/shiko.jpg") no-repeat;
+}
+
+/*-----Hover Styles-----*/
+#content #episodet #lista_episodeve li a:hover{
+  font-weight: bold; 
+  text-decoration: underline;
+}
+
+#content #episodet #lista_episodeve li a:hover span{
+  background-position: 0 -40px;
+}
+
+/*-----Season Distinguishing Classes-----*/
+
+#content #episodet #lista_episodeve li .sezoni1 {
+  border-left: 5px solid #101010;
+}
+
+#content #episodet #lista_episodeve li .sezoni2 {
+  border-left: 5px solid #cc7a00;
+}
+
+#content #episodet #lista_episodeve li .sezoni3 {
+  border-left: 5px solid #000099;
+}
+
+#content #episodet #lista_episodeve li .sezoni4 {
+  border-left: 5px solid #006600;
+}
+
+#content #episodet #lista_episodeve li .sezoni5 {
+  border-left: 5px solid #602040;
+}
+
+#content #episodet #lista_episodeve li .sezoni6 {
+  border-left: 5px solid #602040;
+}
+
+#content #episodet #lista_episodeve li .sezoni7 {
+  border-left: 5px solid #990000;
+}
+
+#content #episodet #lista_episodeve li .sezoni8 {
+  border-left: 5px solid #333300;
+}
+
+#content #episodet #lista_episodeve li .sezoni9 {
+  border-left: 5px solid #99003d;
+}
+
+#content #episodet #lista_episodeve li .sezoni10 {
+  border-left: 5px solid #808080;
+}
+
+/*-----Styling the Bottom Navigator-----*/
+#content #episodet #bottom_nav{
+  margin: 5px auto;
+  width: 100%; 
+  overflow: hidden;
+  border: none; 
+}
+
+#content #bottom_nav li{
+  margin: 5px 0 5px 2.5%;
+  padding: 1% 0;
+  width: 10%;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 85%;
+  text-align: center;
+  color: #2D3594;
+  background: white;
+  border: 2px solid #2D3594;
+  border-radius: 10px;  
+  cursor: pointer;
+}
+
+#content #bottom_nav li:hover{
+  color: white;
+  background: #2D3594;
+}
+
+#content #bottom_nav li.current{
+  color: orange;
+  background: #2D3594;
+  border: 2px solid white;
+}
+
+#content #bottom_nav li.greyed{
+  color: black; 
+  background: #6f739b;
+  border: 2px solid black;
+}
+
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+ #content {
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #info h1 {
+    padding: 10px; 
+  }
+
+  #content #info #basic_info img {
+    max-width: 450px; 
+  }
+
+  #content #info #basic_info ul{
+    margin: 10px auto;
+  }
+
+  #content #info #basic_info ul li {
+    padding: 5px; 
+  }
+
+  #content #info .untoggled{
+    display: none; 
+  }
+
+  #content #info  .toggled{
+    display: block; 
+  }
+
+  #content #info #more_info p {
+    margin: 10px auto;
+  }
+
+  #content #info #more_info p:last-of-type {
+    font-weight: normal; 
+  }
+
+  #content #info a {
+    margin: 10px auto 20px auto; 
+  }
+
+
+  /*--Styling the Episodes division*/
+
+  #content #episodet {
+    border-top: 2px dashed #2D3594; 
+  }
+
+  #content #episodet h2 {
+    padding: 10px; 
+  }
+
+  /*-----Styling the search Form----*/
+  #content #episodet form {
+    margin: 10px auto;
+    max-width: 350px;
+  }
+
+  #content #episodet form input {
+    padding: 8px; 
+    font-size: 90%; 
+  }
+
+   /*------Styling the list of episodes to click---*/
+  #content #episodet #lista_episodeve {
+    width: 75%;
+  }
+
+  #content #episodet #lista_episodeve li a {
+    width: 90%;
+    padding: 15px;
+    min-height: 35px; 
+  }
+
+
+  /*-----Styling the Bottom Navigator-----*/
+  #content #bottom_nav{
+    margin: 5px auto;
+    overflow: hidden;
+  }
+
+  #content #bottom_nav li{
+    margin-left: 3%;
+  }
+
+  #content #bottom_nav li:hover{
+    color: white;
+    background: #2D3594;
+  }
+
+  #content #bottom_nav li.current{
+    color: orange;
+    background: #2D3594;
+    border: 2px solid white;
+  }
+
+  #content #bottom_nav li.greyed{
+    color: black; 
+    background: #6f739b;
+    border: 2px solid black;
+  }
+
+}
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+  #content {
+    max-width: 1000px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+    overflow: hidden; 
+  }
+
+  #content #info, #content #episodet {
+    width: 48%; 
+    margin: 15px 0; 
+    margin-left: 1.8%; 
+    float: left; 
+    border: none; 
+  }
+
+  #content #info {
+    font-size: 120%;
+  }
+
+  #content #info h1 {
+    padding: 15px; 
+  }
+
+  #content #info #info_toggle {
+    display: none; 
+  }
+
+  #content #info .untoggled{
+    display: block; 
+  }
+
+  #content #info  .toggled{
+    display: block; 
+  }
+
+  #content #info #more_info p {
+    margin: 10px auto;
+  }
+
+  #content #info #more_info p:last-of-type {
+    font-weight: normal; 
+  }
+
+
+  /*--Styling the Episodes division*/
+
+  #content #episodet {
+    font-size: 90%; 
+    border-left: 1px solid #2D3594; 
+  }
+
+  #content #episodet h2 {
+    padding: 15px; 
+  }
+
+  /*-----Styling the search Form----*/
+  #content #episodet form {
+    margin: 10px auto;
+    max-width: 350px;
+  }
+
+  #content #episodet form label {
+    padding: 5px; 
+    font-size: 110%; 
+  }
+
+  #content #episodet form input {
+    padding: 5px; 
+    width: 25%; 
+    margin: 0; 
+    margin-left: 5%;
+  }
+
+   /*------Styling the list of episodes to click---*/
+  #content #episodet #lista_episodeve {
+    width: 90%;
+  }
+
+  #content #episodet #lista_episodeve li a {
+    width: 90%;
+    padding: 10px;
+    min-height: 35px; 
+  }
+
+
+  /*-----Styling the Bottom Navigator-----*/
+  #content #bottom_nav{
+    margin: 5px auto;
+    overflow: hidden;
+  }
+
+  #content #bottom_nav li{
+    margin-left: 3%;
+  }
+
+  #content #bottom_nav li:hover{
+    color: white;
+    background: #2D3594;
+  }
+
+  #content #bottom_nav li.current{
+    color: orange;
+    background: #2D3594;
+    border: 2px solid white;
+  }
+
+  #content #bottom_nav li.greyed{
+    color: black; 
+    background: #6f739b;
+    border: 2px solid black;
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+   #content {
+    max-width: 1440px; 
+  }
+
+  #content #info {
+    width: 55%; 
+    margin: 15px 0; 
+    margin-left: 2.4%; 
+  }
+
+ #content #info #basic_info  img {
+   max-width: 700px; 
+ }
+
+  #content #episodet {
+    width: 40%; 
+  }
+}

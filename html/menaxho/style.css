@@ -1,0 +1,127 @@
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+#wrapper {
+  min-width: 1280px; 
+  margin: 0 auto; 
+  background: #2D3594; 
+  padding: 0 10px; 
+}
+
+#sidenav {
+  color: white; 
+  width: 300px; 
+  float: left; 
+  font-size: 15pt;
+  list-style: none; 
+  margin: 10px; 
+  padding: 10px;  
+  background: #E7EAFF;
+  text-align: center; 
+}
+
+#sidenav li { 
+  color: #2D3594;
+  font-weight: bold; 
+  padding: 7px 0; 
+  font-size: 18pt; 
+}
+
+#sidenav ul {
+  text-align: left; 
+  list-style: none; 
+}
+
+#sidenav a{
+  margin: 0; 
+  background: #2D3594;
+  text-decoration: none; 
+  color: white; 
+  width: 280px; 
+  display: block; 
+  padding: 7px 5px; 
+  text-align: center;
+  border: 2px solid #2D3594;
+  border-radius: 15px;
+  font-size: 16pt;
+}
+
+#sidenav a:hover{
+  background: white; 
+  color: #2D3594;
+}
+
+a.current {
+  background: white !important; 
+  color: #2D3594 !important;
+}
+
+/*-------------------Stili per formularet---------------*/
+#wrapper #shto_film, #wrapper #shto_episod {
+  margin: 10px; 
+  margin-left: 335px; 
+  min-height: 1500px; 
+  background: #E7EAFF;
+  padding-bottom: 20px; 
+}
+
+#wrapper #shto_film h1, #wrapper #shto_episod h1{
+  padding: 20px; 
+  color: #2D3594;
+}
+
+#wrapper #shto_film form, #wrapper #shto_episod form{
+  width: 500px; 
+  margin: 0 20px;  
+  font-size: 15pt;  
+  color:  #2D3594; 
+  border: 1px dashed #2D3594; 
+}
+
+#wrapper #shto_film form fieldset, #wrapper #shto_episod form fieldset{ 
+  padding: 10px; 
+  border: none;  
+}
+
+#wrapper #shto_film form legend, #wrapper #shto_episod form legend{
+  margin: 0 auto; 
+  font-weight: bold; 
+  font-size: 20pt; 
+}
+
+#wrapper #formularet form input[type=text], #wrapper #formulari form input[type=text] {
+  display:block; 
+  margin: 5px auto; 
+  width: 50%;
+  text-align: center; 
+  padding: 2px; 
+  color: white; 
+  background: #2D3594;
+  border: 1px solid #2D3594;
+  font-weight: bold; 
+}
+
+#wrapper #formularet form input[type=submit], #wrapper #formulari form input[type=submit] {
+  width: 200px; 
+  padding: 5px;  
+  border: 1px solid #2D3594;
+  border-radius: 5px; 
+  background: #2D3594;
+  color: white; 
+  display: block; 
+  margin: 10px auto; 
+  font-weight: bold; 
+}
+
+#wrapper #formularet form textarea, #wrapper #formulari form textarea {
+  width: 90%; 
+  min-height: 30px;
+  padding: 2px; 
+  display: block; 
+  margin: 5px 10px; 
+  resize: vertical;
+  overflow: auto;
+}
+

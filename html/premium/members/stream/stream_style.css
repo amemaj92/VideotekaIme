@@ -1,0 +1,167 @@
+/*-----Content Text Section Style Rules-----*/
+#content {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px; 
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 14pt; 
+  overflow: hidden;
+}
+
+#content h1 {
+  margin: 15px 0;
+  padding: 5px ;
+  font-size: 135%;
+  text-align: center;
+  color:  #2224A4; 
+}
+
+/*Styling the series_list */
+
+#content #stream_nav ul{ 
+  margin: 1px auto;
+  overflow: hidden;
+  list-style: none; 
+  max-width: 600px; 
+}
+
+#content #stream_nav ul li{
+  margin: 15px 0 15px 0;
+  width: 29%; 
+  margin-left: 2%; 
+  text-align: center; 
+  float: left; 
+}
+
+#content #stream_nav ul li a{
+  width: 100%; 
+  height: 100%; 
+  padding: 5px 0; 
+  display: block; 
+  text-decoration: none;
+  font-weight: bold; 
+  font-size: 90%;  
+  position: relative;
+  color: white; 
+  background: #2224A4;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/*-----Hover Styles-----*/
+#content #stream_nav ul li a:hover{
+  background: white;
+  color: #2224A4;
+  border-color: #2224A4;
+}
+
+#content #stream_nav ul li a.current_nav{
+  background: #111111;
+  color: #white;
+  border-color: 1px solid white;
+}
+
+#content #video_div {
+  width: 85%; 
+  max-width: 960px;
+  margin:0 auto; 
+  padding-bottom: 30px; 
+}
+
+#content #banner_div {
+  width: 90%; 
+  max-width: 700px;
+  margin: 10px auto; 
+  overflow: hidden; 
+}
+
+#content #banner_div #banner_1, #content #banner_div #banner_2 {
+  float:left; 
+  margin-left: 15px; 
+}
+
+#content #video_container{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* The aspect ratio */
+}
+
+#content #video_container video{
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  width:    100%;
+  height:   100%;
+  border: 1px solid black; 
+  background: black; 
+}
+
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+  #content {
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #stream_nav ul li{
+    margin: 20px 0 20px 0;
+    width: 25%; 
+    margin-left: 6%; 
+  }
+
+  #content #video_div {
+    padding-bottom: 45px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+   #content {
+    max-width: 1120px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #stream_nav ul li{
+    margin: 25px 0;
+    width: 25%; 
+    margin-left: 6%; 
+  }
+
+  #content #video_div {
+    padding-bottom: 55px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+   #content {
+    max-width: 1440px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #stream_nav ul li{
+    margin: 30px 0;
+    width: 25%; 
+    margin-left: 6%; 
+  }
+
+  #content #video_div {
+    padding-bottom: 75px; 
+  }
+}

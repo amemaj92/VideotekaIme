@@ -1,0 +1,149 @@
+/*-----Content Text Section Style Rules-----*/
+#content #content_wrapper{
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px; 
+  background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+  font-size: 12pt; 
+}
+
+#content #videotekaime_banner_1, #content #videotekaime_banner_2 {
+  display: none; 
+}
+
+#content #video_wrapper h1 {
+  margin: 15px 0;
+  padding: 5px ;
+  font-size: 135%;
+  text-align: center;
+  color:  #2224A4; 
+}
+
+#content #video_wrapper #video_div {
+  width: 85%; 
+  max-width: 960px;
+  margin:0 auto; 
+  padding-bottom: 30px; 
+}
+
+#content #video_wrapper #video_container{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* The aspect ratio */
+}
+
+#content #video_wrapper #video_div video{
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  width:    100%;
+  height:   100%;
+  border: 1px solid black; 
+  background: black; 
+  z-Index: 3; 
+}
+
+/*--------------------------------------------------*/
+
+/*Medium Screens*/
+
+@media screen and (min-width: 481px) {
+  #content #content_wrapper{
+    max-width: 680px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 14pt; 
+    min-height: 630px; 
+  }
+  
+  #content #content_wrapper {
+    position: relative;  
+  }
+    
+  #content #videotekaime_banner_1 {
+    display: block; 
+    width: 120px; 
+    height: 600px; 
+    position: absolute;  
+    top: 15px;  
+    left: 10px; 
+    border: 1px solid black; 
+  }
+  
+    #content #video_wrapper {
+    position: relative;  
+    top: 15px; 
+    margin-left: 140px; 
+  }
+
+  #content #video_wrapper #video_div {
+    padding-bottom: 45px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Large Screens*/
+
+@media screen and (min-width:801px) {
+   #content #content_wrapper{
+    max-width: 1120px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+  }
+
+  #content #videotekaime_banner_1 {
+    width: 160px; 
+    height: 600px; 
+    top: 25px;
+  }
+  
+  #content #video_wrapper {
+    top: 20px;
+    margin-left: 180px;
+  }
+
+  #content #video_wrapper #video_div {
+    padding-bottom: 20px; 
+  }
+}
+
+/*--------------------------------------------------*/
+
+/*Extra Large Screens*/
+
+@media screen and (min-width:1121px) {
+   #content #content_wrapper{
+    max-width: 1440px; 
+    background: url("images/mobile/content_background.jpg") repeat-x #E7EAFF; 
+    font-size: 16pt; 
+    min-height: 700px;
+    padding-bottom: 30px;
+  }
+
+  #content #videotekaime_banner_1 {
+    top: 50px; 
+  }
+  
+  #content #video_wrapper #video_wrapper_no_ad {
+    padding-top: 25px; 
+    margin-right: 180px;
+  }
+
+  #content #videotekaime_banner_2 {
+    position: absolute;  
+    display: block; 
+    width: 160px;
+    height: 600px; 
+    top: 25px; 
+    right: 15px; 
+    border: 1px solid black;
+  }
+  
+  #content #video_wrapper #video_div {
+    padding-bottom: 45px; 
+  }
+}
